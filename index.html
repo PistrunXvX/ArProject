@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
+    <title>ArProject</title>
+</head>
+<body>
+    <a-scene >
+            <a-assets>
+                    <a-asset-item id="optimerBoldFont" src="Font.json"></a-asset-item>
+                    <a-asset-item id="tree" src="a_windy_day/scene.gltf"></a-asset-item>
+                  </a-assets>
+        <!-- <a-marker preset="hiro"> -->
+                      <a-entity position="-5 3 -5" scale="3 3 3" text-geometry="value: CyberHand; font: #optimerBoldFont;" material="color: white;"></a-entity>
+                      <a-entity position="0 0 -5" scale="2 2 2" text-geometry="value: Web Studio; font: #optimerBoldFont;" material="color: #7B0D4C;"></a-entity>
+                      <a-entity position="0 3 -10" scale="5 5 5"  animation-mixer gltf-model="#tree"  rotation="10 0 10" autoplay animation="property: rotation; to: 10 360 10; loop: true; dur: 100000"></a-entity>
+                      <a-sky color="black"></a-sky>
+                      <!-- <a-entity position="-1  -1" scale="3 3 3" rotation="0 0 360" text-geometry="value: CyberHand; font: #optimerBoldFont;" material="color: white;"></a-entity>
+                      <a-entity position="0 0 -2" scale="2 2 2" text-geometry="value: Web Studio; font: #optimerBoldFont;" material="color: #7B0D4C;"></a-entity>
+                      <a-entity position="0 0 -1" scale="5 5 5"  animation-mixer gltf-model="#tree"  rotation="10 0 10" autoplay animation="property: rotation; to: 10 360 10; loop: true; dur: 100000"></a-entity> -->
+                      <!-- </a-marker> -->
+                    <!-- <a-entity camera></a-entity>   -->
+                </a-scene>
+    <script>
+    </script>
+</body>
+</html>
+
+<!-- embedded arjs="sourceType: webcam;" -->

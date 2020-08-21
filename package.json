@@ -1,0 +1,18 @@
+{
+  "name": "arprojecttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Egeny Goryachkin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "aframe": "^1.0.4",
+    "express": "^4.17.1"
+  }
+}
